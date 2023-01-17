@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Mini Weather Station</title>
+  </head>
+  <body>
+    <div class="heading">Welcome to Mini Weather Station</div>
+
+    <div class="output">
+      <p>
+        Temperature : {{temperature}}
+      </p>
+    </div>
+    <div class="output">
+      <p>
+        Pressure : {{pressure}}
+      </p>
+    </div>
+    <div class="output">
+      <p>
+        Humidity : {{humidity}}
+      </p>
+    </div>
+    <div class="output">
+      <p>
+        Last Updated On {{date}}
+      </p>
+    </div>
+  </body>
+</html>
